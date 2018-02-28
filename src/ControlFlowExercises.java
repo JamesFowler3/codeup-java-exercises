@@ -60,12 +60,12 @@ public class ControlFlowExercises {
         System.out.format("|  number | squared | cubed |%n");
         System.out.format("+---------+---------+-------+%n");
         for (int i = 0; i < 5; i++) {
-            System.out.format(leftAlignFormat, "some data" + i, i * i);
+            System.out.format(leftAlignFormat, userInput + i, i * i);
         }
         System.out.format("+-----------------+------+%n");
 
     }
 
-    };
+    }
 
 
