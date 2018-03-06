@@ -2,7 +2,8 @@ package movies;
 import util.Input;
 public class MoviesApplication {
     public static void main(String[] args) {
-//
+        Movie MoviesArray[] = movies.MoviesArray.findAll();
+
 //        Frankenstein -- horror
 //        Goodfellas -- drama
 //        Pulp Fiction -- drama
@@ -21,9 +22,38 @@ public class MoviesApplication {
             System.out.println("");
             System.out.println("Enter your choice:");
             userInput = input.getInt(0, 5);
-            if (userInput ==1); {
-                for (Movie movie : MoviesArray.findAll()) {
+
+            if (userInput ==1) {
+                for (Movie movie : MoviesArray) {
                     System.out.println(movie.getMovie() + " " + movie.getCategory());
+                }
+            }
+            else if (userInput ==2) {
+                for (Movie movie : MoviesArray){
+                   if  (movie.getCategory().equals("animated")) {
+                     System.out.println(movie.getMovie());
+                    }
+                }
+            }
+            else if (userInput ==3) {
+                for (Movie movie : MoviesArray){
+                    if  (movie.getCategory().equals("drama")) {
+                        System.out.println(movie.getMovie());
+                    }
+                }
+            }
+            else if (userInput ==4) {
+                for (Movie movie : MoviesArray){
+                    if  (movie.getCategory().equals("horror")) {
+                        System.out.println(movie.getMovie());
+                    }
+                }
+            }
+            else if (userInput ==5) {
+                for (Movie movie : MoviesArray){
+                    if  (movie.getCategory().equals("scifi")) {
+                        System.out.println(movie.getMovie());
+                    }
                 }
             }
         }
