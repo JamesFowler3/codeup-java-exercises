@@ -2,11 +2,11 @@ package movies;
 
 public class Movie {
 private String movie;
-private String Category;
+private String category;
 
     public Movie(String movie, String category) {
         this.movie = movie;
-        Category = category;
+        this.category = category;
     }
 
     public String getMovie() {
@@ -18,11 +18,11 @@ private String Category;
     }
 
     public String getCategory() {
-        return Category;
+        return category;
     }
 
     public void setCategory(String category) {
-        Category = category;
+        this.category = category;
     }
 }
 
